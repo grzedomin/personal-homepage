@@ -1,10 +1,8 @@
-import { GlobalStyle } from "./GlobalStyle";
+import Container from "./Container";
 
 function App() {
   return (
-    <div>
-      heheszki
-    </div>
+    <Container/>
   );
 }
 
