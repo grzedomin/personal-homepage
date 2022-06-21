@@ -1,10 +1,10 @@
-import { Wrapper, Header, Content, List, Item, Marker } from "./styled";
+import { Wrapper, Header, Content, List, Item, Marker, Icon } from "./styled";
 import { skillsList } from "./skillsList";
 
-const Skills = () => (
+const Skills = ({ title }) => (
     <Wrapper>
         <>
-            <Header>My skillset includes</Header>
+            <Header>{title}</Header>
             <Content>
                 <List>
                     {skillsList.map(skill =>
