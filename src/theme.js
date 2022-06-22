@@ -8,5 +8,6 @@ export const theme = {
     white: "#FFFFFF",
     iron: "#D1D5DA",
     scienceBlue: "#0366D6",
+    dodgerBlue: "#2188FF",
   }
 };
