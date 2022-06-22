@@ -18,8 +18,3 @@ export const SubHeader = styled.p`
     margin-top: 8px;
     margin-bottom: 0px;
 `;
-
-export const Projects = styled.div`
-    margin-top: 24px;
-    background-color: ${({theme}) => theme.colors.white};
-`;
