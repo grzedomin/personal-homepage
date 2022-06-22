@@ -1,4 +1,4 @@
-import { Repos, Tile, Header, Description, DemoLink, RepoLink } from "./styled";
+import { Repos, Tile, Header, Description, Demo, Repo, Link } from "./styled";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -8,7 +8,6 @@ const Repositories = () => {
     const [fetchState, setFetchState] = useState({
         state: "loading",
     });
-
     const [repos, setRepos] = useState([]);
 
     useEffect(() => {
@@ -36,19 +35,15 @@ const Repositories = () => {
             <>
                 {repos.map((item) => {
                     return (
-                        <Tile>
-                            <Header>Movies Browser</Header>
-                            <Description>
-                                Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.
-                            </Description>
-                            <DemoLink>Demo: </DemoLink>
-                            <RepoLink>Code: </RepoLink>
+                        <Tile key={item.id}>
+                            <Header>{item.name}</Header>
+                            <Description>{item.description}</Description>
+                            <Demo>Demo: <Link>{item.html_url}</Link></Demo>
+                            <Repo>Code: <Link>{item.html_url}</Link></Repo>
                         </Tile>
-                    )
-                })}
+                    )})}
             </>
         </Repos>
     );
 };
-
 export default Repositories;
