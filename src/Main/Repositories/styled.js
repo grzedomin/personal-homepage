@@ -54,6 +54,7 @@ export const Repo = styled.p`
 `;
 
 export const Link = styled.a`
+    margin-left: 8px;
     font-weight: 400;
     font-size: 18px;
     color: ${({ theme }) => theme.colors.scienceBlue};
