@@ -1,4 +1,4 @@
-import { Wrapper, Header, Content, List, Item, Marker, Icon } from "./styled";
+import { Wrapper, Header, Content, List, Item, Marker } from "./styled";
 import { skillsList } from "./skillsList";
 
 const Skills = ({ title }) => (
