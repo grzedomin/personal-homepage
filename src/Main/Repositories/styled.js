@@ -11,6 +11,14 @@ export const Tile = styled.div`
     padding: 56px;
     border: 6px solid ${({ theme }) => theme.colors.iron};
     background-color: ${({ theme }) => theme.colors.white};
+    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+    border-radius: 4px;
+    text-align: left;
+  
+
+    &:hover{
+        border: 6px solid rgba(3, 102, 214, 0.2);
+    }
 `;
 
 export const Header = styled.h3`
@@ -35,12 +43,14 @@ export const Demo = styled.p`
     color: ${({ theme }) => theme.colors.slateGray};
     margin-top: 24px;
     margin-bottom: 0px;
+    letter-spacing: 0.05em;
 `;
 
 export const Repo = styled.p`
     color: ${({ theme }) => theme.colors.slateGray};
     margin-top: 8px;
     margin-bottom: 0px;
+    letter-spacing: 0.05em;
 `;
 
 export const Link = styled.a`
@@ -49,8 +59,14 @@ export const Link = styled.a`
     color: ${({ theme }) => theme.colors.scienceBlue};
     line-height: 140%;
     letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(3, 102, 214, 0.2);
+    text-decoration: none;
 
     &:focus {
         color: ${({ theme }) => theme.colors.dodgerBlue};
+    }
+
+    &:hover{
+        border-bottom: 1px solid ${({ theme }) => theme.colors.scienceBlue};
     }
 `;

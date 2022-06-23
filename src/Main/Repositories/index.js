@@ -38,10 +38,11 @@ const Repositories = () => {
                         <Tile key={item.id}>
                             <Header>{item.name}</Header>
                             <Description>{item.description}</Description>
-                            <Demo>Demo: <Link>{item.homepage}</Link></Demo>
-                            <Repo>Code: <Link>{item.html_url}</Link></Repo>
+                            <Demo>Demo: <Link href={item.homepage}>{item.homepage}</Link></Demo>
+                            <Repo>Code: <Link href={item.html_url}>{item.html_url}</Link></Repo>
                         </Tile>
-                    )})}
+                    )
+                })}
             </>
         </Repos>
     );
