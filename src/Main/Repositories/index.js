@@ -3,8 +3,6 @@ import LoadingError from "./LoadingError";
 import { Repos, Tile, Header, Description, Demo, Repo, Link, LoadingInfo } from "./styled";
 import { useFetchData } from "./useFetchData";
 
-
-
 const Repositories = () => {
 
     const {

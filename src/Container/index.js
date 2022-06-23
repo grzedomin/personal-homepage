@@ -3,7 +3,6 @@ import ThemeSwitch from "./ThemeSwitch";
 import { Wrapper } from "./styled";
 
 const Container = () => {
-
     return (
 
         <Wrapper>
@@ -12,8 +11,6 @@ const Container = () => {
                 <About />
             </>
         </Wrapper>
-
     )
 };
-
 export default Container;

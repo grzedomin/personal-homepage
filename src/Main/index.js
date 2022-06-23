@@ -12,5 +12,4 @@ const Main = ({ title }) => {
         </Wrapper>
     );
 };
-
 export default Main;

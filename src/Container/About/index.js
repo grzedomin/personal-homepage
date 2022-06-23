@@ -1,9 +1,7 @@
 import { Wrapper, Image, Content, Caption, Header, Description, Button, ButtonIcon } from "./styled";
 import Photo from "../../images/Photo.png"
 
-
 const About = () => {
-
     return (
         <Wrapper>
             <Image src={Photo} alt="" />
@@ -23,5 +21,4 @@ const About = () => {
         </Wrapper>
     );
 };
-
 export default About;
