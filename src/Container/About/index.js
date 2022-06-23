@@ -1,5 +1,6 @@
-import { Wrapper, Image, Content, Caption, Header, Description } from "./styled";
+import { Wrapper, Image, Content, Caption, Header, Description, Button, ButtonIcon } from "./styled";
 import Photo from "../../images/Photo.png"
+
 
 const About = () => {
 
@@ -14,6 +15,10 @@ const About = () => {
                 <Description>
                     👨🏻‍💻  I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
                 </Description>
+                <Button href="mailto:grze.domin98@gmail.com">
+                    <ButtonIcon />
+                    Hire Me
+                </Button>
             </Content>
         </Wrapper>
     );

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Icon } from "../../svg/Button-icon.svg";
 
 export const Wrapper = styled.div`
     display: grid;
@@ -34,4 +35,33 @@ export const Description = styled.p`
     font-size: 20px;
     line-height: 28px;
     color: ${({theme}) => theme.colors.slateGray};
+`;
+
+export const Button = styled.a`
+    margin-top: 32px;
+    width: 134px;
+    padding: 12px 16px;
+    background-color: ${({theme}) => theme.colors.scienceBlue};
+    border: 1px solid rgba(209, 213, 218, 0.3);
+    border-radius: 4px;
+    color: ${({theme}) => theme.colors.white};
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover{
+        box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;
+        cursor: pointer;
+    }
+    &:active{
+        box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
+    }
+`;
+
+export const ButtonIcon = styled(Icon)`
+    margin-right: 18px;
 `;
