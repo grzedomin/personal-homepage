@@ -74,8 +74,9 @@ export const Link = styled.a`
 export const LoadingInfo = styled.p`
     font-weight: 400;
     font-size: 20px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.mineShaft};
     text-align: center;
+    margin-top: 88px;
 `;
 
 export const LoadingError = styled.p`
