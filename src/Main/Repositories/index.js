@@ -1,5 +1,6 @@
 import LoadingIcon from "./LoadingIcon";
-import { Repos, Tile, Header, Description, Demo, Repo, Link, LoadingInfo, LoadingError } from "./styled";
+import LoadingError from "./LoadingError";
+import { Repos, Tile, Header, Description, Demo, Repo, Link, LoadingInfo } from "./styled";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -17,7 +18,7 @@ const Repositories = () => {
                 const response = await axios("https://api.github.com/users/grzedomin/repos");
                 setRepos(response.data);
                 setFetchState({
-                    state: "loading",
+                    state: "success",
                 });
                 console.log(response.data);
             }
@@ -41,7 +42,7 @@ const Repositories = () => {
                 )
                 : fetchState.state === "error" ?
                     (
-                        <LoadingError>Oops, something went wrong!</LoadingError>
+                        <LoadingError />
                     )
                     :
                     (
