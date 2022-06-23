@@ -70,11 +70,3 @@ export const Link = styled.a`
         border-bottom: 1px solid ${({ theme }) => theme.colors.scienceBlue};
     }
 `;
-
-export const LoadingInfo = styled.p`
-    font-weight: 400;
-    font-size: 20px;
-    color: ${({ theme }) => theme.colors.mineShaft};
-    text-align: center;
-    margin-top: 88px;
-`;

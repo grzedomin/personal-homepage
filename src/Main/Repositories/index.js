@@ -1,4 +1,4 @@
-import LoadingIcon from "./LoadingIcon";
+import Loading from "./Loading";
 import LoadingError from "./LoadingError";
 import { Repos, Tile, Header, Description, Demo, Repo, Link, LoadingInfo } from "./styled";
 import { useEffect, useState } from "react";
@@ -36,8 +36,8 @@ const Repositories = () => {
             {fetchState.state === "loading" ?
                 (
                 <>
-                    <LoadingInfo>Please wait, projects are being loaded...</LoadingInfo>
-                    <LoadingIcon />
+                    
+                    <Loading />
                 </>
                 )
                 : fetchState.state === "error" ?
