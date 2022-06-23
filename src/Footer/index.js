@@ -1,4 +1,4 @@
-import { Wrapper, Caption, Email, Description, Icons } from "./styled";
+import { Wrapper, Caption, Email, Description, Icons, IconLink } from "./styled";
 import { ReactComponent as GitHub } from "../svg/GitHub.svg";
 import { ReactComponent as Facebook } from "../svg/Facebook.svg";
 import { ReactComponent as LinkedIn } from "../svg/LinkedIN.svg";
@@ -12,10 +12,10 @@ const Footer = () => (
             I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me
         </Description>
         <Icons>
-            <GitHub />
-            <Facebook />
-            <LinkedIn />
-            <Instagram />
+            <IconLink href="https://github.com/grzedomin" target="_blank"> <GitHub /> </IconLink>
+            <IconLink href="https://www.facebook.com/grzegorz.domin.1" target="_blank"> <Facebook /> </IconLink>
+            <IconLink href="https://www.linkedin.com/in/grzegorzdomin98" target="_blank"> <LinkedIn /> </IconLink>
+            <IconLink href="https://www.instagram.com/grzes.domin/" taget="_blank"> <Instagram /> </IconLink>
         </Icons>
     </Wrapper>
 );

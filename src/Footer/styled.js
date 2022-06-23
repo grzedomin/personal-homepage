@@ -50,3 +50,18 @@ export const Icons = styled.div`
     flex-direction: row;
     gap: 24px;
 `;
+
+export const IconLink = styled.a`
+
+    &:hover{
+        & path{
+            fill: ${({ theme }) => theme.colors.scienceBlue};
+            cursor: pointer;
+        }
+    }
+    &:active{
+        & path {
+            fill: ${({ theme }) => theme.colors.dodgerBlue};
+        }
+    }
+`;
