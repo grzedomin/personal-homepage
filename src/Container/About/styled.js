@@ -38,9 +38,9 @@ export const Description = styled.p`
 `;
 
 export const Button = styled.a`
+    width: 124px;
     margin-top: 32px;
-    width: 134px;
-    padding: 12px 16px;
+    padding: 12px 16px 12px 18px;
     background-color: ${({theme}) => theme.colors.scienceBlue};
     border: 1px solid rgba(209, 213, 218, 0.3);
     border-radius: 4px;
