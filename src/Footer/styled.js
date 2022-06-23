@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.footer`
     margin-top: 120px;
+    margin-bottom: 109px;
     width: 691px;
 `;
 
