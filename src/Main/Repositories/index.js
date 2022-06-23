@@ -1,4 +1,4 @@
-import { Repos, Tile, Header, Description, Demo, Repo, Link } from "./styled";
+import { Repos, Tile, Header, Description, Demo, Repo, Link, LoadingInfo, LoadingError } from "./styled";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -24,34 +24,45 @@ const Repositories = () => {
                 setFetchState({
                     state: "error",
                 });
-                console.log(error)
             }
         };
-        setTimeout(fetchRepos);
+        setTimeout(fetchRepos, 2000);
     }, []);
 
     return (
-        <Repos>
             <>
-                {repos.map((item) => {
-                    return (
-                        <Tile key={item.id}>
-                            <Header>{item.name}</Header>
-                            <Description>{item.description}</Description>
-                            <Demo>
-                                Demo:
-                                {item.homepage !== null
-                                    ?
-                                    <Link href={item.homepage}>{item.homepage}</Link>
-                                    : "Project has not been deployed"
-                                }
-                            </Demo>
-                            <Repo>Code:<Link href={item.html_url}>{item.html_url}</Link></Repo>
-                        </Tile>
+                {fetchState.state === "loading" ?
+                    (
+                        <LoadingInfo>Please wait, projects are being loaded...</LoadingInfo>
                     )
-                })}
+                    : fetchState.state === "error" ?
+                        (
+                            <LoadingError>Oops, something went wrong!</LoadingError>
+                        )
+                        :
+                        (
+                            <Repos>
+                                {repos.map((item) => {
+                                    return (
+                                        <Tile key={item.id}>
+                                            <Header>{item.name}</Header>
+                                            <Description>{item.description}</Description>
+                                            <Demo>
+                                                Demo:
+                                                {item.homepage !== null
+                                                    ?
+                                                    <Link href={item.homepage}>{item.homepage}</Link>
+                                                    : "Project has not been deployed"
+                                                }
+                                            </Demo>
+                                            <Repo>Code:<Link href={item.html_url}>{item.html_url}</Link></Repo>
+                                        </Tile>
+                                    )
+                                })}
+                            </Repos>
+                        ) 
+                }
             </>
-        </Repos>
     );
 };
 export default Repositories;
