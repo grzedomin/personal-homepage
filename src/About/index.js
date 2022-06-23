@@ -1,5 +1,5 @@
 import { Wrapper, Image, Content, Caption, Header, Description, Button, ButtonIcon } from "./styled";
-import Photo from "../../images/Photo.png"
+import Photo from "../images/Photo.png"
 
 const About = () => {
     return (

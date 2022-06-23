@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Icon } from "../../svg/Button-icon.svg";
+import { ReactComponent as Icon } from "../svg/Button-icon.svg";
 
 export const Wrapper = styled.div`
     display: grid;
