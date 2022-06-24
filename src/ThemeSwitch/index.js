@@ -1,9 +1,18 @@
-import { Container } from "./styled";
+import { Wrapper, Caption, Container, IconBody, Sun } from "./styled";
+
 
 const ThemeSwitch = () => {
     return (
-        <Container>DARK MODE OFF</Container>
+        <>
+            <Wrapper>
+            <Caption>DARK MODE OFF</Caption>
+            <Container>
+                <IconBody>
+                    <Sun />
+                </IconBody>
+            </Container>
+            </Wrapper>
+        </>
     )
 };
-
 export default ThemeSwitch;
