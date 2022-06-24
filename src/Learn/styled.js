@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as Circle } from "../svg/circle.svg";
 
 export const Wrapper = styled.section`
-    background-color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.tile.background};
     margin-top: 72px;
     padding: 32px;
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
@@ -15,22 +15,22 @@ export const Header = styled.h2`
     line-height: 36px;
     margin: 0;
     padding-bottom: 15px;
-    color: ${({ theme }) => theme.colors.mineShaft};
-    border-bottom: 1px solid ${({ theme }) => theme.colors.iron};
+    color: ${({ theme }) => theme.colors.headers};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
     letter-spacing: 0.05em;
 `;
 
 export const Content = styled.div`
     font-weight: 400;
     font-size: 18px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.textPrimary};
     margin-top: 32px;
 `;
 
 export const Marker = styled(Circle)`
     width: 9px;
     height: 9px;
-    background-color: ${({ theme }) => theme.colors.scienceBlue};
+    background-color: ${({ theme }) => theme.colors.mainBlue};
     border-radius: 50%;
     margin-right: 16px;
 `;

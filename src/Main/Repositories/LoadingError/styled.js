@@ -3,7 +3,7 @@ import { ReactComponent as Icon } from "../../../svg/ErrorIcon.svg";
 
 export const Wrapper = styled.div`
     margin-top: 88px;
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.headers};
     margin-bottom: 180px;
     display: flex;
     flex-direction: column;
@@ -32,14 +32,18 @@ export const SubHeader = styled.p`
 
 export const ErrorIcon = styled(Icon)`
     margin-top: 8px;
+
+    & path {
+        stroke: ${({ theme }) => theme.colors.icons}
+    }
 `;
 
 export const Button = styled.a`
     width: 138px;
     margin-top: 32px;
     padding: 12px 16px 12px 18px;
-    background-color: ${({theme}) => theme.colors.scienceBlue};
-    color: ${({theme}) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.buttonLink.text};
     border: 1px solid rgba(209, 213, 218, 0.1);
     border-radius: 4px;
     font-size: 20px;

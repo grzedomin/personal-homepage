@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Caption = styled.div`
-     color: ${({ theme }) => theme.colors.slateGray};
+     color: ${({ theme }) => theme.colors.textPrimary};
      font-weight: 700;
      font-size: 12px;
      display: flex;

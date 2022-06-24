@@ -20,31 +20,31 @@ export const Content = styled.div`
 export const Caption = styled.span`
     font-weight: 700;
     font-size: 15px;
-    color: ${({theme}) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
 export const Header = styled.h1`
     margin-bottom: 35px;
     font-weight: 900;
     font-size: 38px;
-    color: ${({theme}) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.headers};
 `;
 
 export const Description = styled.p`
     font-weight: 400px;
     font-size: 20px;
     line-height: 28px;
-    color: ${({theme}) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
 export const Button = styled.a`
     width: 124px;
     margin-top: 32px;
     padding: 12px 16px 12px 18px;
-    background-color: ${({theme}) => theme.colors.scienceBlue};
+    background-color: ${({ theme }) => theme.colors.buttonLink.background};
     border: 1px solid rgba(209, 213, 218, 0.3);
     border-radius: 4px;
-    color: ${({theme}) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.buttonLink.text};
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;

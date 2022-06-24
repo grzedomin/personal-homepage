@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: ${({ theme }) => theme.colors.mercury};
+    background-color: ${({ theme }) => theme.colors.background};
     width: 1216px;
     margin: 119px auto;
 }

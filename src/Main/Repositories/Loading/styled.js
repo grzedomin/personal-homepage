@@ -14,7 +14,7 @@ export const StyledSpinner = styled(IconSpinner)`
 export const LoadingInfo = styled.p`
     font-weight: 400;
     font-size: 20px;
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.headers};
     text-align: center;
     margin-top: 88px;
     margin-bottom: 48px;

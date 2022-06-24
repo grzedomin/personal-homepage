@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
     margin-top: 72px;
     text-align: center;
+    color: ${({ theme }) => theme.colors.headers};
 `;
 
 export const Logo = styled.img`

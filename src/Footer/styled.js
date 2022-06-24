@@ -10,12 +10,12 @@ export const Caption = styled.p`
     font-weight: 700;
     font-size: 12px;
     line-height: 130%;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
 export const Email = styled.a`
     margin-top: 24px;
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.headers};
     font-weight: 900;
     font-size: 32px;
     line-height: 39px;
@@ -23,15 +23,15 @@ export const Email = styled.a`
     text-decoration: none;
 
     &:hover{
-        color: ${({ theme }) => theme.colors.scienceBlue};
+        color: ${({ theme }) => theme.colors.primary};
     }
 
     &:visited{
-        color: ${({ theme }) => theme.colors.mineShaft};
+        color: ${({ theme }) => theme.colors.link.active};
     }
 
     &:active{
-        color: ${({ theme }) => theme.colors.dodgerBlue};
+        color: ${({ theme }) => theme.colors.link.active};
     }
 `;
 
@@ -42,7 +42,7 @@ export const Description = styled.p`
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.headers};
 `;
 
 export const Icons = styled.div`
@@ -53,16 +53,19 @@ export const Icons = styled.div`
 `;
 
 export const IconLink = styled.a`
+& path {
+    fill: ${({theme}) => theme.colors.icons}
+}
 
     &:hover{
         & path{
-            fill: ${({ theme }) => theme.colors.scienceBlue};
+            fill: ${({ theme }) => theme.colors.primary};
             cursor: pointer;
         }
     }
     &:active{
         & path {
-            fill: ${({ theme }) => theme.colors.dodgerBlue};
+            fill: ${({ theme }) => theme.colors.link.active};
         }
     }
 `;
