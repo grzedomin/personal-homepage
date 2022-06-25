@@ -10,6 +10,7 @@ const colorNames = {
   alto: "#DADADA",
   borderBottom: "rgba(209, 213, 218, 0.1)",
   doveGray: "#6D6C6C",
+  whiteLilac: "FBFBFE",
 };
 
 
@@ -18,7 +19,7 @@ export const lightTheme = {
     primary: colorNames.scienceBlue,
     textPrimary: colorNames.slateGray,
     textSecondary: colorNames.mineShaft,
-    background: colorNames.mercury,
+    background: colorNames.whiteLilac,
     border: colorNames.mercury,
     headers: colorNames.mineShaft,
     icons: colorNames.mineShaft,
