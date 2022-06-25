@@ -12,7 +12,12 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     background-color: ${({ theme }) => theme.colors.background};
-    width: 1216px;
+    max-width: 1216px;
     margin: 119px auto;
+
+    @media (max-width: 767px){
+        margin-top: 21px;
+        margin-bottom: 31px;
+    }
 }
 `;

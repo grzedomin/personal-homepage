@@ -1,6 +1,6 @@
 import Loading from "./Loading";
 import LoadingError from "./LoadingError";
-import { Repos, Tile, Header, Description, Demo, Repo, Link, LoadingInfo } from "./styled";
+import { Repos, Tile, Header, Description, Demo, Repo, Link } from "./styled";
 import { useFetchData } from "./useFetchData";
 
 const Repositories = () => {
@@ -14,10 +14,10 @@ const Repositories = () => {
         <>
             {fetchState.state === "loading" ?
                 (
-                <>
-                    
-                    <Loading />
-                </>
+                    <>
+
+                        <Loading />
+                    </>
                 )
                 : fetchState.state === "error" ?
                     (

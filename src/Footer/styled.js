@@ -3,7 +3,11 @@ import styled from "styled-components";
 export const Wrapper = styled.footer`
     margin-top: 130px;
     margin-bottom: 109px;
-    width: 691px;
+    max-width: 691px;
+    
+    @media(max-width: 767px){
+        margin: 0 16px 31px;
+    };
 `;
 
 export const Caption = styled.p`
@@ -11,6 +15,11 @@ export const Caption = styled.p`
     font-size: 12px;
     line-height: 130%;
     color: ${({ theme }) => theme.colors.textPrimary};
+
+    @media(max-width: 767px){
+        font-size: 12px;
+        line-height: 130%;
+    };
 `;
 
 export const Email = styled.a`
@@ -33,6 +42,12 @@ export const Email = styled.a`
     &:active{
         color: ${({ theme }) => theme.colors.link.active};
     }
+
+    @media(max-width: 767px){
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 12px;
+    };
 `;
 
 export const Description = styled.p`
@@ -43,6 +58,12 @@ export const Description = styled.p`
     line-height: 140%;
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.colors.headers};
+
+    @media(max-width: 767px){
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 12px;
+    };
 `;
 
 export const Icons = styled.div`
@@ -50,6 +71,11 @@ export const Icons = styled.div`
     display: flex;
     flex-direction: row;
     gap: 24px;
+
+    @media(max-width: 767px){
+       margin-top: 40px;
+    };
+
 `;
 
 export const IconLink = styled.a`

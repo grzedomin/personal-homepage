@@ -5,22 +5,43 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 66px;
+
+    @media (max-width: 767px){
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-left: 16px;
+        margin-right: 16px;
+    };
 `;
 
 export const Image = styled.img`
     height: 398px;
     width: 398px;
     border-radius: 50%;
+
+    @media (max-width: 767px){
+        max-height: 132px;
+        max-width: 132px;
+    };
 `;
 
 export const Content = styled.div`
     margin: 64px 0px 12px 0px;
+
+    @media (max-width: 767px){
+        margin-top: 12px;
+    };
 `;
 
 export const Caption = styled.span`
     font-weight: 700;
     font-size: 15px;
     color: ${({ theme }) => theme.colors.textPrimary};
+
+    @media (max-width: 767px){
+       font-size: 12px;
+    };
 `;
 
 export const Header = styled.h1`
@@ -28,6 +49,12 @@ export const Header = styled.h1`
     font-weight: 900;
     font-size: 38px;
     color: ${({ theme }) => theme.colors.headers};
+
+    @media (max-width: 767px){
+        margin-bottom: 0px;
+        margin-top: 8px;
+        font-size: 22px;
+    };
 `;
 
 export const Description = styled.p`
@@ -35,6 +62,13 @@ export const Description = styled.p`
     font-size: 20px;
     line-height: 28px;
     color: ${({ theme }) => theme.colors.textPrimary};
+
+    @media (max-width: 767px){
+        margin-top: 16px;
+        margin-bottom: 24px;
+        font-size: 17px;
+        word-wrap: break-word;
+    };
 `;
 
 export const Button = styled.a`
