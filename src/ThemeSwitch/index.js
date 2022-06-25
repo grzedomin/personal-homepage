@@ -1,19 +1,10 @@
 import { useState } from "react";
-import { lightTheme, darkTheme} from "../theme";
+import { lightTheme, darkTheme } from "../theme";
 import { Wrapper, Caption, Container, IconBody, Sun } from "./styled";
 
 
 const ThemeSwitch = () => {
-  /*  const [themeState, setThemeState] = useState({
-        state: lightTheme,
-    });
 
-    setThemeState({
-        state: darkTheme,
-    }); */
-
-
-    ;
     return (
         <>
             <Wrapper>

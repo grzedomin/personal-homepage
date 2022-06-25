@@ -17,7 +17,7 @@ export const Caption = styled.div`
      padding: 5px;
 `;
 
-export const Container = styled.span`
+export const Container = styled.button`
      width: 47px;
      padding: 2px;
      border: 1px solid;
