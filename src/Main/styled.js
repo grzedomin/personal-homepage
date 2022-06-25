@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
     color: ${({ theme }) => theme.colors.headers};
 
     @media (max-width: 767px){
-        margin: 48px 16px;
+        margin: 48px 0px;
     }
 `;
 

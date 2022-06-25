@@ -19,5 +19,9 @@ body {
         margin-top: 21px;
         margin-bottom: 31px;
     }
+
+    @media (max-width: 1300px){
+      margin: 21px 16px;
+    }
 }
 `;

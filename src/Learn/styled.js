@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
     border-radius: 4px;
 
     @media(max-width: 767px){
-        margin: 50px 14px;
+        margin: 50px 0;
         padding: 16px;
     };
 `;

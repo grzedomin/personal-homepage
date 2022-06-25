@@ -6,7 +6,7 @@ export const Wrapper = styled.footer`
     max-width: 691px;
     
     @media(max-width: 767px){
-        margin: 0 16px 31px;
+        margin: 0px 0px 31px;
     };
 `;
 

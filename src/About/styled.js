@@ -10,8 +10,6 @@ export const Wrapper = styled.div`
         display: flex;
         flex-direction: column;
         gap: 0;
-        margin-left: 16px;
-        margin-right: 16px;
     };
 `;
 
