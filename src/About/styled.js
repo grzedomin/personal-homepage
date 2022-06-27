@@ -5,12 +5,14 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 66px;
+    transition: 0.4s;
 
     @media (max-width: 767px){
         display: flex;
         flex-direction: column;
         gap: 0;
     };
+    
 `;
 
 export const Image = styled.img`

@@ -4,6 +4,7 @@ export const Wrapper = styled.section`
     margin-top: 72px;
     text-align: center;
     color: ${({ theme }) => theme.colors.headers};
+    transition: 0.4s;
 
     @media (max-width: 767px){
         margin: 48px 0px;

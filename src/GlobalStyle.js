@@ -14,6 +14,7 @@ body {
     background-color: ${({ theme }) => theme.colors.background};
     max-width: 1216px;
     margin: 119px auto;
+    transition: 0.4s;
 
     @media (max-width: 767px){
         margin-top: 21px;

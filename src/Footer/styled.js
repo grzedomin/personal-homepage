@@ -71,6 +71,7 @@ export const Icons = styled.div`
     display: flex;
     flex-direction: row;
     gap: 24px;
+    transition: 0.4s;
 
     @media(max-width: 767px){
        margin-top: 40px;
