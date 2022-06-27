@@ -20,7 +20,7 @@ export const Caption = styled.div`
 export const Container = styled.button`
      width: 47px;
      padding: 2px;
-     border: 1px solid;
+     border: 1px solid ${({ theme }) => theme.colors.textPrimary};
      border-radius: 15px;
      background: rgb(229,229,229);
 
