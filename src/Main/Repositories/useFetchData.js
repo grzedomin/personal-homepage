@@ -16,7 +16,6 @@ export const useFetchData = () => {
                 setFetchState({
                     state: "success",
                 });
-                console.log(response.data);
             }
             catch (error) {
                 setFetchState({
