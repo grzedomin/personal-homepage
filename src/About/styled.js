@@ -36,6 +36,7 @@ export const Caption = styled.span`
     font-weight: 700;
     font-size: 15px;
     color: ${({ theme }) => theme.colors.textPrimary};
+    letter-spacing: 0.05em;
 
     @media (max-width: 767px){
        font-size: 12px;
@@ -47,6 +48,7 @@ export const Header = styled.h1`
     font-weight: 900;
     font-size: 38px;
     color: ${({ theme }) => theme.colors.headers};
+    letter-spacing: 0.05em;
 
     @media (max-width: 767px){
         margin-bottom: 0px;
