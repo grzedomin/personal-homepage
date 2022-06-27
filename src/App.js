@@ -7,12 +7,16 @@ import Footer from "./Footer";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyle } from './GlobalStyle';
+import useToggleTheme from "./useToggleTheme";
 
 function App() {
+
+ const { themeState, toggleTheme} = useToggleTheme();
+ 
   return (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={themeState === "light" ? lightTheme : darkTheme}>
         <GlobalStyle />
-      <ThemeSwitch />
+      <ThemeSwitch toggleTheme={toggleTheme} themeState={themeState}/>
       <About />
       <Skills title="My skillset includes 🛠️" />
       <Learn title="What i want to learn next 🚀" />

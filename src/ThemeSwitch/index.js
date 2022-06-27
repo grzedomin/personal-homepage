@@ -1,21 +1,15 @@
-import { useState } from "react";
-import { lightTheme, darkTheme } from "../theme";
 import { Wrapper, Caption, Container, IconBody, Sun } from "./styled";
 
-
-const ThemeSwitch = () => {
-
+const ThemeSwitch = ({ toggleTheme, themeState }) => {
     return (
-        <>
             <Wrapper>
-                <Caption>DARK MODE OFF</Caption>
-                <Container>
+                <Caption>{themeState === "light" ? "DARK MODE OFF" : "DARK MODE ON"}</Caption>
+                <Container onClick={() => toggleTheme()}>
                     <IconBody>
                         <Sun />
                     </IconBody>
                 </Container>
             </Wrapper>
-        </>
     )
 };
 export default ThemeSwitch;
