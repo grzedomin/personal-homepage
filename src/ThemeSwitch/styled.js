@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as SunIcon } from "../svg/Sun.svg";
 
 export const Wrapper = styled.div`
@@ -22,7 +22,7 @@ export const Container = styled.button`
      padding: 2px;
      border: 1px solid ${({ theme }) => theme.colors.textPrimary};
      border-radius: 15px;
-     background: rgb(229,229,229);
+     background: ${({ theme }) => theme.colors.themeSwitch.background};
 
      &:hover{
           cursor: pointer;
@@ -36,13 +36,16 @@ export const IconBody = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  transition: transform .3s;
-
-&:active{
-     transform: translateX(20px);
-}
+  transition: transform .6s;
+  background: ${({ theme }) => theme.colors.themeSwitch.iconBackground};
+  
+  ${({ iconTransition }) =>
+          iconTransition && css`
+          transform: translateX(20px);
+          & path {
+            fill: ${({ theme }) => theme.colors.themeSwitch.iconSun};
+        }
+    `};
 `;
 
-export const Sun = styled(SunIcon)`
-
-`;
+export const Sun = styled(SunIcon)``;

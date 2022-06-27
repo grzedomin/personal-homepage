@@ -35,7 +35,8 @@ export const lightTheme = {
     },
     themeSwitch: {
       background: colorNames.mercury,
-      icon: colorNames.white,
+      iconBackground: colorNames.slateGray,
+      iconSun: colorNames.primary,
     },
     link: {
       active: colorNames.dodgerBlue,
@@ -64,7 +65,8 @@ export const darkTheme = {
     },
     themeSwitch: {
       background: colorNames.doveGray,
-      icon: colorNames.mineShaft,
+      iconBackground: colorNames.white,
+      iconSun: colorNames.mineShaft,
     },
     link: {
       active: colorNames.scienceBlue,
