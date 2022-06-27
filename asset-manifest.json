@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.e580bac0.js",
+    "main.js": "/personal-homepage/static/js/main.47329631.js",
     "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
     "static/media/Photo.png": "/personal-homepage/static/media/Photo.e34a1494d29f0d44d11b.png",
     "static/media/Instagram.svg": "/personal-homepage/static/media/Instagram.ee578e609e7fc77094097d0a5bbd7645.svg",
-    "static/media/Sun.svg": "/personal-homepage/static/media/Sun.30eb9ee242feeadefd9e9c772cc2eaf7.svg",
+    "static/media/Sun.svg": "/personal-homepage/static/media/Sun.66d683619384ae4710056b7b223005c3.svg",
     "static/media/GitHub.svg": "/personal-homepage/static/media/GitHub.911c244f5dd9017a6836a59ffe294087.svg",
     "static/media/Shape.svg": "/personal-homepage/static/media/Shape.a9062bf9626a38e8866f20e84ee3d71b.svg",
     "index.html": "/personal-homepage/index.html",
@@ -14,10 +14,10 @@
     "static/media/Facebook.svg": "/personal-homepage/static/media/Facebook.14f43e9c25d473ecd49ceaf878f965b9.svg",
     "static/media/icon-spinner.svg": "/personal-homepage/static/media/icon-spinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
     "static/media/circle.svg": "/personal-homepage/static/media/circle.c28602c8be31d96b4a27bc3627dd6f6f.svg",
-    "main.e580bac0.js.map": "/personal-homepage/static/js/main.e580bac0.js.map",
+    "main.47329631.js.map": "/personal-homepage/static/js/main.47329631.js.map",
     "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.e580bac0.js"
+    "static/js/main.47329631.js"
   ]
 }
