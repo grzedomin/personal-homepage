@@ -20,7 +20,7 @@ body {
         margin-bottom: 31px;
     }
 
-    @media (max-width: 1300px){
+    @media (max-width: 1280px){
       margin: 21px 16px;
     }
 }

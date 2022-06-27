@@ -12,6 +12,11 @@ export const Repos = styled.div`
         font-size: 14px;
         grid-gap: 24px;
     }
+    @media (max-width: 1280px){
+        margin: 48px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const Tile = styled.div`
