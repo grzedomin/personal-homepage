@@ -9,7 +9,7 @@ const Footer = () => (
         <Caption>LET'S TALK!</Caption>
         <Email href="mailto:grze.domin98@gmail.com">grze.domin98@gmail.com</Email>
         <Description>
-            I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me
+            I'm looking forward to grow up in Front-End languages and skills in proffesional company. If you are interested and want to hire me, feel free to contact me via e-mail or LinkedIn. I'm always open for the new challenges and new job opportunities.
         </Description>
         <Icons>
             <IconLink href="https://github.com/grzedomin" target="_blank"> <GitHub /> </IconLink>

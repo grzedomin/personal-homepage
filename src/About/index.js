@@ -11,7 +11,7 @@ const About = () => {
                     Grzegorz Domin
                 </Header>
                 <Description>
-                    👨🏻‍💻  I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
+                    👨🏻‍💻  I’m an enthusiastic Frontend Developer in friendship with React, currently looking for new job opportunities and challenges.
                 </Description>
                 <Button href="mailto:grze.domin98@gmail.com">
                     <ButtonIcon />
