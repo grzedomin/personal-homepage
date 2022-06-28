@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# Personal-homepage
+
+## Demo: https://grzedomin.github.io/personal-homepage/
+
+### This is my personal homepage. Feel free to see it!
+
+### Used technologies:
+- HTML
+- CSS (Flex, Grid)
+- JavaScript ES6+
+- MediaQueries
+- React
+- create-react-app
+- React hooks
+- custom hooks
+- Styled-compontents
+- Visual project from Figma
+
+### Enjoy!
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
