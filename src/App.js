@@ -7,16 +7,17 @@ import Footer from "./Footer";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyle } from './GlobalStyle';
-import useToggleTheme from "./useToggleTheme";
+import { useSelector } from "react-redux";
+
 
 function App() {
 
- const { themeState, toggleTheme} = useToggleTheme();
- 
+  const { isLightTheme } = useSelector((state) => state.theme);
+
   return (
-    <ThemeProvider theme={themeState === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
         <GlobalStyle />
-      <ThemeSwitch toggleTheme={toggleTheme} themeState={themeState}/>
+      <ThemeSwitch />
       <About />
       <Skills title="My skillset includes 🛠️" />
       <Learn title="What i want to learn next 🚀" />

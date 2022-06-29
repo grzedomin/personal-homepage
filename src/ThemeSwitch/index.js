@@ -1,11 +1,16 @@
 import { Wrapper, Caption, Container, IconBody, Sun } from "./styled";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleTheme } from "./themeSlice";
 
-const ThemeSwitch = ({ toggleTheme, themeState }) => {
+const ThemeSwitch = () => {
+    const { isLightTheme } = useSelector((state) => state.theme);
+    const dispatch = useDispatch();
+
     return (
         <Wrapper>
-            <Caption>{themeState === "light" ? "DARK MODE OFF" : "DARK MODE ON"}</Caption>
-            <Container onClick={() => toggleTheme()}>
-                <IconBody iconTransition={themeState === "dark"}>
+            <Caption>{isLightTheme ? "DARK MODE OFF" : "DARK MODE ON"}</Caption>
+            <Container onClick={() => dispatch(toggleTheme())}>
+                <IconBody iconTransition={!isLightTheme}>
                     <Sun />
                 </IconBody>
             </Container>
