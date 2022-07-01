@@ -1,11 +1,11 @@
 import Repositories from "./Repositories";
-import { Wrapper, Logo, Header, SubHeader, Repos } from "./styled";
-import logo from "../svg/Shape.svg";
+import { Wrapper, Header, SubHeader, Icon } from "./styled";
+
 
 const Main = ({ title }) => {
     return (
         <Wrapper>
-            <Logo src={logo} />
+            <Icon />
             <Header>{title}</Header>
             <SubHeader>My recent projects</SubHeader>
             <Repositories />

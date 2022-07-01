@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as GitHubIcon } from "../svg/Shape.svg";
 
 export const Wrapper = styled.section`
     margin-top: 72px;
@@ -11,11 +12,11 @@ export const Wrapper = styled.section`
     }
 `;
 
-export const Logo = styled.img`
+export const Icon = styled(GitHubIcon)`
     @media (max-width: 767px){
-            width: 32px;
-            height: 32px;
-        }
+                width: 32px;
+             height: 32px;
+            }
 `;
 
 export const Header = styled.h2`
