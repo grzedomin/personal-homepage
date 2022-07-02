@@ -1,6 +1,6 @@
 import { Wrapper, Caption, Container, IconBody, Sun } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
-import { selectThemeState, toggleTheme } from "./themeSlice";
+import { selectThemeState, toggleTheme } from "../themeSlice";
 
 const ThemeSwitch = () => {
     const { isLightTheme } = useSelector(selectThemeState);

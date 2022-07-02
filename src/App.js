@@ -1,4 +1,4 @@
-import ThemeSwitch from "./ThemeSwitch";
+import ThemeSwitch from "./common/ThemeSwitch";
 import About from "./About";
 import Skills from "./Skills";
 import Learn from "./Learn";
