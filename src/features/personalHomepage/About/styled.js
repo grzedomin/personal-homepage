@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as Icon } from "../svg/Button-icon.svg";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.header`
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 66px;
