@@ -3,8 +3,7 @@ import themeReducer from "./ThemeSwitch/themeSlice";
 
 const store = configureStore({
     reducer: {
-        theme: themeReducer,
-        
+        theme: themeReducer,      
     },
 });
 export default store;

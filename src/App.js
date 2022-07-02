@@ -9,9 +9,7 @@ import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyle } from './GlobalStyle';
 import { useSelector } from "react-redux";
 
-
 function App() {
-
   const { isLightTheme } = useSelector((state) => state.theme);
 
   return (
