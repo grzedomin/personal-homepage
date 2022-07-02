@@ -67,6 +67,12 @@ export const List = styled.ul`
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 8px;
 
+    @media (max-width: 1280px){
+        padding-left: 16px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0;
+    };
+
     @media (max-width: 767px){
         padding-left: 16px;
         grid-template-columns: 1fr;
