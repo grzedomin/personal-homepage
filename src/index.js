@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './core/App/App';
 import reportWebVitals from './reportWebVitals';
-import store from './store';
+import store from './core/store';
 import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
