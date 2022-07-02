@@ -4,7 +4,7 @@ import Photo from "./images/Photo.png"
 const About = () => {
     return (
         <Wrapper>
-            <Image src={Photo} alt="" />
+            <Image src={Photo} alt="Grzegorz Domin" />
             <Content>
                 <Caption>THIS IS</Caption>
                 <Header>
