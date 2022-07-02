@@ -14,16 +14,12 @@ const Repositories = () => {
         <>
             {fetchState.state === "loading" ?
                 (
-                    <>
-
-                        <Loading />
-                    </>
+                    <Loading />
                 )
                 : fetchState.state === "error" ?
                     (
                         <LoadingError />
-                    )
-                    :
+                    ) :
                     (
                         <Repos>
                             {repos.map((item) => {
