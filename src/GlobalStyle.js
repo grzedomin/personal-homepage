@@ -16,13 +16,12 @@ body {
     margin: 119px auto;
     transition: 0.4s;
 
-    @media (max-width: 767px){
-        margin-top: 21px;
-        margin-bottom: 31px;
-    }
-
     @media (max-width: 1280px){
       margin: 21px 16px;
+    }
+
+    @media (max-width: 767px){
+        margin: 21px 16px 31px 16px;
     }
 }
 `;
