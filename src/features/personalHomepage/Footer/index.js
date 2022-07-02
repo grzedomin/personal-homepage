@@ -15,7 +15,7 @@ const Footer = () => (
             <IconLink href="https://github.com/grzedomin" target="_blank"> <GitHub /> </IconLink>
             <IconLink href="https://www.facebook.com/grzegorz.domin.1" target="_blank"> <Facebook /> </IconLink>
             <IconLink href="https://www.linkedin.com/in/grzegorzdomin98" target="_blank"> <LinkedIn /> </IconLink>
-            <IconLink href="https://www.instagram.com/grzes.domin/" taget="_blank"> <Instagram /> </IconLink>
+            <IconLink href="https://www.instagram.com/grzes.domin/" target="_blank"> <Instagram /> </IconLink>
         </Icons>
     </Wrapper>
 );
