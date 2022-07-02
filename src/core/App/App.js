@@ -1,9 +1,9 @@
 import ThemeSwitch from "../../common/ThemeSwitch";
-import About from "../../About";
-import Skills from "../../Skills";
-import Learn from "../../Learn";
-import Main from "../../Main";
-import Footer from "../../Footer";
+import About from "../../features/personalHomepage/About";
+import Skills from "../../features/personalHomepage/Skills";
+import Learn from "../../features/personalHomepage/Learn";
+import Portfolio from "../../features/personalHomepage/Portfolio";
+import Footer from "../../features/personalHomepage/Footer";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../theme";
 import { GlobalStyle } from '../GlobalStyle';
@@ -19,7 +19,7 @@ function App() {
       <About />
       <Skills title="My skillset includes 🛠️" />
       <Learn title="What i want to learn next 🚀" />
-      <Main title="Portfolio" />
+      <Portfolio title="Portfolio" />
       <Footer />
     </ThemeProvider>
   );

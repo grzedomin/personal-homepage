@@ -1,8 +1,7 @@
 import Repositories from "./Repositories";
 import { Wrapper, Header, SubHeader, Icon } from "./styled";
 
-
-const Main = ({ title }) => {
+const Portfolio = ({ title }) => {
     return (
         <Wrapper>
             <Icon />
@@ -12,4 +11,4 @@ const Main = ({ title }) => {
         </Wrapper>
     );
 };
-export default Main;
+export default Portfolio;
