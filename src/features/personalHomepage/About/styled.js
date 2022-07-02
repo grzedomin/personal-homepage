@@ -60,7 +60,7 @@ export const Header = styled.h1`
 `;
 
 export const Description = styled.p`
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: ${({ theme }) => theme.colors.textPrimary};

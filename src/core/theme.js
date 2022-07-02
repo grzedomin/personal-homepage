@@ -10,7 +10,7 @@ const colorNames = {
   alto: "#DADADA",
   borderBottom: "rgba(209, 213, 218, 0.1)",
   doveGray: "#6D6C6C",
-  whiteLilac: "FBFBFE",
+  whiteLilac: "#FBFBFE",
 };
 
 
