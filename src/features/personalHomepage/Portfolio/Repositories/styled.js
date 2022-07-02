@@ -29,6 +29,7 @@ export const Tile = styled.div`
 
     &:hover{
         border: 6px solid rgba(3, 102, 214, 0.2);
+        transition: 0.6s;
     }
 
     @media (max-width: 767px){
@@ -108,6 +109,7 @@ export const Link = styled.a`
 
     &:hover{
         border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
+        transition: 0.3s;
     }
 
     @media (max-width: 767px){

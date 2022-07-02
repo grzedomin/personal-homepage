@@ -33,6 +33,7 @@ export const Email = styled.a`
 
     &:hover{
         color: ${({ theme }) => theme.colors.primary};
+        transition: 0.5s;
     }
 
     &:visited{
@@ -88,6 +89,7 @@ export const IconLink = styled.a`
         & path{
             fill: ${({ theme }) => theme.colors.primary};
             cursor: pointer;
+            transition: 0.5s;
         }
     }
     &:active{
