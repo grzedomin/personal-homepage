@@ -1,14 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './core/App/App';
-import reportWebVitals from './reportWebVitals';
-import store from './core/store';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./core/App/App";
+import reportWebVitals from "./reportWebVitals";
+import store from "./core/store";
 import { Provider } from "react-redux";
+import { Normalize } from "styled-normalize";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+      <Normalize />
       <App />
     </Provider>
   </React.StrictMode>
