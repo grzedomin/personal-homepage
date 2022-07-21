@@ -6,17 +6,15 @@ import Portfolio from "../../features/personalHomepage/Portfolio";
 import Footer from "../../features/personalHomepage/Footer";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../theme";
-import { GlobalStyle } from '../GlobalStyle';
+import { GlobalStyle } from "../GlobalStyle";
 import { useSelector } from "react-redux";
-import {Normalize} from "styled-normalize";
 
 function App() {
   const { isLightTheme } = useSelector((state) => state.theme);
 
   return (
     <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
-      <Normalize />
-        <GlobalStyle />
+      <GlobalStyle />
       <ThemeSwitch />
       <About />
       <Skills title="My skillset includes 🛠️" />
