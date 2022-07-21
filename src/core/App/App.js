@@ -8,12 +8,14 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../theme";
 import { GlobalStyle } from '../GlobalStyle';
 import { useSelector } from "react-redux";
+import {Normalize} from "styled-normalize";
 
 function App() {
   const { isLightTheme } = useSelector((state) => state.theme);
 
   return (
     <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
+      <Normalize />
         <GlobalStyle />
       <ThemeSwitch />
       <About />
