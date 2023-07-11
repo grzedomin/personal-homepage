@@ -1,21 +1,22 @@
 import { Wrapper, Image, Content, Caption, Header, Description, Button, ButtonIcon } from "./styled";
 import Photo from "./images/Photo.png"
+import { aboutStrings} from "./aboutStrings";
 
 const About = () => {
     return (
         <Wrapper>
             <Image src={Photo} alt="Grzegorz Domin" />
             <Content>
-                <Caption>THIS IS</Caption>
+                <Caption>{aboutStrings.label}</Caption>
                 <Header>
-                    Grzegorz Domin
+                    {aboutStrings.name}
                 </Header>
                 <Description>
-                    👨🏻‍💻  I’m an enthusiastic Frontend Developer in friendship with React, currently looking for new job opportunities and challenges.
+                   {aboutStrings.description}
                 </Description>
                 <Button href="mailto:grze.domin98@gmail.com">
                     <ButtonIcon />
-                    Hire Me
+                    {aboutStrings.buttonLabel}
                 </Button>
             </Content>
         </Wrapper>
